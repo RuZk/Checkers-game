@@ -22,10 +22,12 @@ release
 
 SOURCES += main.cpp\
     ./field.cpp \
-    ./command.cpp
+    ./command.cpp \
+    commandexecuter.cpp
 
 HEADERS  += field.h \
-    ./command.h
+    ./command.h \
+    commandexecuter.h
 
 OBJECTS_DIR = $$PWD/tmp/obj
 UI_DIR = $$PWD/tmp/ui
