@@ -11,12 +11,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Checkers
 TEMPLATE = app
 
-
-SOURCES += main.cpp\
-    field.cpp
-
-HEADERS  += field.h
-
 debug
 {
     PWD = $$PWD/../debug
@@ -26,6 +20,12 @@ release
     PWD = $$PWD/../release
 }
 
+SOURCES += main.cpp\
+    ./field.cpp \
+    ./command.cpp
+
+HEADERS  += field.h \
+    ./command.h
 
 OBJECTS_DIR = $$PWD/tmp/obj
 UI_DIR = $$PWD/tmp/ui

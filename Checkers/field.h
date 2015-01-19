@@ -6,7 +6,6 @@
 class Field
 {
 public:
-
     enum Cell {NotValid,
                Empty,
                WhitePiece,
@@ -14,8 +13,12 @@ public:
                WhiteKing,
                BlackKing
               };
+
     Field();
+
+    bool isValid(int _i, int _j) const;
     Cell at(int _i, int _j) const;
+    bool set(int _i, int _j, Cell _val);
 
 private:
     QVector<Cell> m_field;

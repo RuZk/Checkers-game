@@ -11,17 +11,37 @@ Field::Field()
         m_field[i] = WhitePiece;
 }
 
+bool Field::isValid(int _i, int _j) const
+{
+    if(_i > 7 || _j > 7 || _i < 0 || _j < 0)
+        return false;
+    if((_i + _j) % 2 == 0)
+        return false;
+
+    int index = _i * 8 + _j;
+    if(index > 64 || index < 0)
+        return false;
+
+    return true;
+}
+
 Field::Cell Field::at(int _i, int _j) const
 {
-    if(_i >= 8 || _j >= 8 || _i < 0 || _j < 0)
-        return NotValid;
-    if((_i + _j) % 2)
+    if(!isValid(_i, _j))
         return NotValid;
 
     int index = _i * 8 + _j;
-    if(index > 63 || index < 0)
-        return NotValid;
     index /= 2;
-
     return m_field[index];
+}
+
+bool Field::set(int _i, int _j, Cell _val)
+{
+    if(!isValid(_i, _j))
+        return false;
+
+    int index = _i * 8 + _j;
+    index /= 2;
+    m_field[index] = _val;
+    return true;
 }
