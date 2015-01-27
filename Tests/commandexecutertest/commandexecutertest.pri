@@ -11,9 +11,8 @@ TARGET = tst_fieldtest
 CONFIG   += console
 CONFIG   -= app_bundle
 
- message(testsdir: $$PWD)
-
-SOURCES += $$PWD/fieldtest.cpp \
-           $$PWD/../../Checkers/field.cpp
+SOURCES += $$PWD/commandexecutertest.cpp \
+           $$PWD/../../Checkers/commandexecuter.cpp \
+           $$PWD/../../Checkers/command.cpp
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"

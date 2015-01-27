@@ -1,3 +1,6 @@
+#ifndef FIELD_TST
+#define FIELD_TST
+
 #include <QString>
 #include <QtTest>
 
@@ -112,6 +115,8 @@ void FieldTest::testOutOfField()
 
 }
 
-QTEST_APPLESS_MAIN(FieldTest)
+//QTEST_MAIN(FieldTest)
 
 #include "tst_fieldtest.moc"
+
+#endif // FIELD_TST
