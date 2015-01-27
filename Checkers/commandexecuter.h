@@ -2,6 +2,8 @@
 #define COMMANDEXECUTER_H
 
 #include "field.h"
+#include "tools.h"
+
 class Command;
 
 class CommandExecuter
@@ -15,6 +17,7 @@ public:
     const Field field() const;
 private:
     Field m_field;
+    Player m_currentPlayer;
 };
 
 #endif // COMMANDEXECUTER_H

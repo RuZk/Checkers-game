@@ -27,7 +27,8 @@ SOURCES += main.cpp\
 
 HEADERS  += field.h \
     ./command.h \
-    commandexecuter.h
+    commandexecuter.h \
+    tools.h
 
 OBJECTS_DIR = $$PWD/tmp/obj
 UI_DIR = $$PWD/tmp/ui
@@ -46,6 +47,4 @@ DESTDIR = $$PWD/bin
  message(Data files: $$[QT_INSTALL_DATA])
  message(Translation files: $$[QT_INSTALL_TRANSLATIONS])
  message(Settings: $$[QT_INSTALL_SETTINGS])
- message(Examples: $$[QT_INSTALL_EXAMPLES])
- message(Demonstrations: $$[QT_INSTALL_DEMOS])
  message(The project will be installed in $$DESTDIR)

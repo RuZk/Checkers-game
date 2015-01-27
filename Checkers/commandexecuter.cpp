@@ -2,7 +2,8 @@
 #include "command.h"
 
 CommandExecuter::CommandExecuter()
-    : m_field()
+    : m_field(),
+      m_currentPlayer(White)
 {
 }
 

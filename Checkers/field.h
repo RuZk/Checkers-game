@@ -6,16 +6,9 @@
 class Field
 {
 public:
-    enum Cell {NotValid,
-               Empty,
-               WhitePiece,
-               BlackPiece,
-               WhiteKing,
-               BlackKing
-              };
+    enum Cell {NotValid, Empty, WhitePiece, BlackPiece, WhiteKing, BlackKing};
 
     Field();
-
     bool isValid(int _i, int _j) const;
     Cell at(int _i, int _j) const;
     bool set(int _i, int _j, Cell _val);
