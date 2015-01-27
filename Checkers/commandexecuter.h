@@ -15,6 +15,7 @@ public:
     bool executeCommand(const Command& _command);
 
     const Field field() const;
+
 private:
     Field m_field;
     Player m_currentPlayer;

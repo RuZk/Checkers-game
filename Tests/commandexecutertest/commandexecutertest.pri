@@ -13,6 +13,7 @@ CONFIG   -= app_bundle
 
 SOURCES += $$PWD/commandexecutertest.cpp \
            $$PWD/../../Checkers/commandexecuter.cpp \
+           $$PWD/../../Checkers/turnanalizer.cpp \
            $$PWD/../../Checkers/command.cpp
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"

@@ -1,5 +1,7 @@
 #include "field.h"
 
+const int N = 8;
+
 Field::Field()
    : m_field(32)
 {
@@ -44,4 +46,14 @@ bool Field::set(int _i, int _j, Cell _val)
     index /= 2;
     m_field[index] = _val;
     return true;
+}
+
+int Field::width() const
+{
+    return N;
+}
+
+int Field::height() const
+{
+    return N;
 }

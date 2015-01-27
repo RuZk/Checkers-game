@@ -13,6 +13,9 @@ public:
     Cell at(int _i, int _j) const;
     bool set(int _i, int _j, Cell _val);
 
+    int width() const;
+    int height() const;
+
 private:
     QVector<Cell> m_field;
 };

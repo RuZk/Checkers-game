@@ -23,12 +23,14 @@ release
 SOURCES += main.cpp\
     ./field.cpp \
     ./command.cpp \
-    commandexecuter.cpp
+    commandexecuter.cpp \
+    turnanalizer.cpp
 
 HEADERS  += field.h \
     ./command.h \
     commandexecuter.h \
-    tools.h
+    tools.h \
+    turnanalizer.h
 
 OBJECTS_DIR = $$PWD/tmp/obj
 UI_DIR = $$PWD/tmp/ui

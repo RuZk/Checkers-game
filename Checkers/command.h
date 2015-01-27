@@ -11,6 +11,7 @@ public:
     inline int fromY() const {return m_fromY;}
     inline int toX()   const {return m_toX;}
     inline int toY()   const {return m_toY;}
+    inline Player player() const {return m_player;}
 
 private:
     int m_fromX, m_fromY;
